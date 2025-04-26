@@ -16,3 +16,11 @@ TEST(HabitManagerTest, AddDuplicateHabitTest) {
     manager.addHabit("Reading");
     EXPECT_FALSE(manager.addHabit("Reading"));
 }
+
+TEST(HabitManagerTest, RemoveHabitTest) {
+    HabitManager manager;
+    manager.addHabit("Reading");
+    EXPECT_TRUE(manager.removeHabit("Reading"));
+    EXPECT_FALSE(manager.removeHabit("Reading")); // уже удалено
+}
+
