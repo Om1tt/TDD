@@ -3,3 +3,8 @@
 14	93	7673939380394824	CMakeFiles/HabitTracker.dir/tests/HabitManagerTest.cpp.obj	7ca14af62e989a2
 3	593	7673939380294395	CMakeFiles/HabitTracker.dir/main.cpp.obj	95fc25ecdd9d1651
 595	722	7673939386208963	HabitTracker.exe	610277670073c54f
+147	399	7673944329607854	CMakeFiles/HabitTracker_tests.dir/src/HabitManager.cpp.obj	62c90ddf54b31a48
+134	1899	7673944329480066	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	38ffc1945de1fee9
+14	9709	7673944328292429	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	bce479709cb34f91
+17	3970	7673944504358816	lib/libgtest.a	9bf54494e3e19435
+12	97	7673944725785797	lib/libgtest_main.a	a71d0fe1956f84ed
