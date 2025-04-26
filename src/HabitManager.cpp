@@ -11,3 +11,7 @@ bool HabitManager::addHabit(const std::string& name) {
     habits.insert(name);
     return true;
 }
+
+bool HabitManager::removeHabit(const std::string& name) {
+    return habits.erase(name) > 0;
+}

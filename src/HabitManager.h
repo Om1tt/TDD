@@ -14,6 +14,7 @@ private:
 public:
     HabitManager() = default;
     bool addHabit(const std::string& name);
+    bool removeHabit(const std::string& name);
 };
 
 #endif //HABITMANAGER_H
