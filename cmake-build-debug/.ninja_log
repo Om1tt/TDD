@@ -1,0 +1,5 @@
+# ninja log v6
+9	91	7673939380354743	CMakeFiles/HabitTracker.dir/src/HabitManager.cpp.obj	d6f7edfa49e6a04b
+14	93	7673939380394824	CMakeFiles/HabitTracker.dir/tests/HabitManagerTest.cpp.obj	7ca14af62e989a2
+3	593	7673939380294395	CMakeFiles/HabitTracker.dir/main.cpp.obj	95fc25ecdd9d1651
+595	722	7673939386208963	HabitTracker.exe	610277670073c54f

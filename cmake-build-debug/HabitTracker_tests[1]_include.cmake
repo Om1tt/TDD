@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/yakub/CLionProjects/HabitTracker/cmake-build-debug/HabitTracker_tests[1]_tests.cmake")
+  include("C:/Users/yakub/CLionProjects/HabitTracker/cmake-build-debug/HabitTracker_tests[1]_tests.cmake")
+else()
+  add_test(HabitTracker_tests_NOT_BUILT HabitTracker_tests_NOT_BUILT)
+endif()
