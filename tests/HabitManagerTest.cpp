@@ -24,3 +24,14 @@ TEST(HabitManagerTest, RemoveHabitTest) {
     EXPECT_FALSE(manager.removeHabit("Reading")); // уже удалено
 }
 
+TEST(HabitManagerTest, ListHabitsTest) {
+    HabitManager manager;
+    manager.addHabit("Reading");
+    manager.addHabit("Workout");
+    auto list = manager.getHabits();
+    EXPECT_EQ(list.size(), 2);
+    EXPECT_NE(std::find(list.begin(), list.end(), "Reading"), list.end());
+    EXPECT_NE(std::find(list.begin(), list.end(), "Workout"), list.end());
+}
+
+
