@@ -34,4 +34,12 @@ TEST(HabitManagerTest, ListHabitsTest) {
     EXPECT_NE(std::find(list.begin(), list.end(), "Workout"), list.end());
 }
 
+TEST(HabitManagerTest, MarkHabitDoneTest) {
+    HabitManager manager;
+    manager.addHabit("Reading");
+    EXPECT_TRUE(manager.markHabitDone("Reading"));
+    EXPECT_FALSE(manager.markHabitDone("Workout")); // нет такой привычки
+}
+
+
 
