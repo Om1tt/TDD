@@ -3,3 +3,7 @@
 //
 
 #include "HabitManager.h"
+
+bool HabitManager::addHabit(const std::string& name) {
+    return true; // todo: заглушка
+}
