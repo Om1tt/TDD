@@ -13,7 +13,7 @@
 class HabitManager {
 private:
     std::set<std::string> habits;
-    std::map<std::string, int> streaks; // сколько дней подряд выполнено
+    std::map<std::string, int> streaks;
     std::set<std::string> doneToday;
 public:
     HabitManager() = default;
@@ -21,6 +21,7 @@ public:
     bool removeHabit(const std::string& name);
     std::vector<std::string> getHabits() const;
     bool markHabitDone(const std::string& name);
+    int getStreak(const std::string& name) const;
 };
 
 #endif //HABITMANAGER_H

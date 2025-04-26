@@ -28,3 +28,11 @@ bool HabitManager::markHabitDone(const std::string& name) {
     streaks[name]++;
     return true;
 }
+
+int HabitManager::getStreak(const std::string& name) const {
+    auto it = streaks.find(name);
+    if (it != streaks.end()) {
+        return it->second;
+    }
+    return 0;
+}
