@@ -19,3 +19,12 @@ bool HabitManager::removeHabit(const std::string& name) {
 std::vector<std::string> HabitManager::getHabits() const {
     return {habits.begin(), habits.end()};
 }
+
+bool HabitManager::markHabitDone(const std::string& name) {
+    if (!habits.count(name)) {
+        return false;
+    }
+    doneToday.insert(name);
+    streaks[name]++;
+    return true;
+}
