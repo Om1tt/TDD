@@ -10,3 +10,9 @@ TEST(HabitManagerTest, AddHabitTest) {
     HabitManager manager;
     EXPECT_TRUE(manager.addHabit("Reading"));
 }
+
+TEST(HabitManagerTest, AddDuplicateHabitTest) {
+    HabitManager manager;
+    manager.addHabit("Reading");
+    EXPECT_FALSE(manager.addHabit("Reading"));
+}
