@@ -5,6 +5,9 @@
 #ifndef HABITMANAGER_H
 #define HABITMANAGER_H
 
-
+class HabitManager {
+public:
+    HabitManager() = default;
+};
 
 #endif //HABITMANAGER_H
