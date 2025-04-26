@@ -6,8 +6,11 @@
 #define HABITMANAGER_H
 
 #include <string>
+#include <set>
 
 class HabitManager {
+private:
+    std::set<std::string> habits;
 public:
     HabitManager() = default;
     bool addHabit(const std::string& name);

@@ -5,5 +5,9 @@
 #include "HabitManager.h"
 
 bool HabitManager::addHabit(const std::string& name) {
-    return true; // todo: заглушка
+    if (habits.count(name)) {
+        return false;
+    }
+    habits.insert(name);
+    return true;
 }
