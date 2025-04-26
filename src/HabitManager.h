@@ -7,6 +7,7 @@
 
 #include <string>
 #include <set>
+#include <vector>
 
 class HabitManager {
 private:
@@ -15,6 +16,7 @@ public:
     HabitManager() = default;
     bool addHabit(const std::string& name);
     bool removeHabit(const std::string& name);
+    std::vector<std::string> getHabits() const;
 };
 
 #endif //HABITMANAGER_H

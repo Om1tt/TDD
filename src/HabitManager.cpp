@@ -15,3 +15,7 @@ bool HabitManager::addHabit(const std::string& name) {
 bool HabitManager::removeHabit(const std::string& name) {
     return habits.erase(name) > 0;
 }
+
+std::vector<std::string> HabitManager::getHabits() const {
+    return {habits.begin(), habits.end()};
+}
