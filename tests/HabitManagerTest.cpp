@@ -5,3 +5,8 @@ TEST(HabitManagerTest, CreationTest) {
     HabitManager manager;
     SUCCEED();
 }
+
+TEST(HabitManagerTest, AddHabitTest) {
+    HabitManager manager;
+    EXPECT_TRUE(manager.addHabit("Reading"));
+}
