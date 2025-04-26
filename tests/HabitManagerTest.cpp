@@ -41,5 +41,12 @@ TEST(HabitManagerTest, MarkHabitDoneTest) {
     EXPECT_FALSE(manager.markHabitDone("Workout")); // нет такой привычки
 }
 
+TEST(HabitManagerTest, HabitStreakTest) {
+    HabitManager manager;
+    manager.addHabit("Workout");
+    manager.markHabitDone("Workout");
+    EXPECT_EQ(manager.getStreak("Workout"), 1);
+}
+
 
 
